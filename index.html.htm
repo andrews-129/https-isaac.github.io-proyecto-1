@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Andrews Rivera</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+
+        header {
+            background-color: #c69c6d;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #d4af7a;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #b8865b;
+            color: white;
+            border-radius: 5px;
+        }
+
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #c69c6d;
+            padding-bottom: 5px;
+        }
+
+
+        .proyectos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .proyecto {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 45%;
+        }
+
+        .proyecto img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #c69c6d;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #b8865b;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#perfil" class="skip-link">Saltar al contenido</a>
+    <header>Hoja de Vida - Andrews Rivera </header>
+    <nav>
+        <a href="#perfil">PERFIL</a>
+        <a href="#proyectos">PROYECTOS</a>
+        <a href="#contacto">CONTACTO</a>
+    </nav>
+
+    <section id="perfil">
+        <h2>Perfil</h2>
+        <p>Soy Andrews David Rivera, un apasionado desarrollador web con experiencia en HTML y CSS. Me especializo en diseñar sitios accesibles y usables que garanticen una experiencia fluida y óptima para todo tipo de usuarios, independientemente de sus habilidades o dispositivos.</p>
+        <p>Mis proyectos destacan por incorporar prácticas de usabilidad, estructuración semántica y diseño responsive, asegurando que los sitios web no solo sean atractivos, sino también funcionales. Siempre busco aprender y mejorar, aplicando los estándares actuales de accesibilidad y explorando nuevas tecnologías que potencien mis habilidades.</p>
+    </section>
+    
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>A continuación, se listan algunos de los proyectos en los que he trabajado. Se describen las tecnologías, el nombre y una pequeña galería de capturas.</p>
+        <div class="proyectos">
+            <div class="proyecto">
+                <img src="img/gato.JPG" alt="CatPhotoApp">
+                <h3>CatPhotoApp</h3>
+                <p>Proyecto para practicar HTML básico y etiquetado semántico.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Estructura del sitio</td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Estilos básicos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="proyecto">
+                <img src="img/cafe.JPG" alt="CSS Café">
+                <h3>CSS Café</h3>
+                <p>Maquetación y estilos de un menú tipo café, con transiciones y diseño responsive.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Estructura</td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Maquetación y responsive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas comunicarte conmigo, por favor diligencia el siguiente formulario:</p>
+        <form>
+            <label for="nombre"><strong>Nombre:</strong></label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email"><strong>Correo electrónico:</strong></label>
+            <input type="email" id="email" name="email">
+            <label for="mensaje"><strong>Mensaje:</strong></label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    
+
+    <footer>
+        © 2025 - Andrews Rivera. Ejemplo de hoja de vida estática en HTML y CSS.
+    </footer>
+</body>
+</html>
